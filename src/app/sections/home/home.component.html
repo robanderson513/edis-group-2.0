@@ -1,4 +1,21 @@
 <div class="home-container">
+  <div class="overlay"></div>
+  <div class="title-container">
+    <div>
+      <h1 *ngIf="activeImage === 0">straight-shooting.</h1>
+      <h1 *ngIf="activeImage === 1">personal.</h1>
+      <h1 *ngIf="activeImage === 2">focused.</h1>
+      <h1>recruiting.</h1>
+    </div>
+    <div class="slogan-container">
+      <h4>simply great recruiting.</h4>
+      <h4>period.</h4>
+    </div>
+    <div class="button-container">
+      <button mat-stroked-button color="basic">find career</button>
+      <button mat-stroked-button color="basic">find talent</button>
+    </div>
+  </div>
   <img *ngIf="activeImage === 0" src="https://edis-group.com/wp-content/uploads/2015/06/Black-Man-Sitting-ipad-e1435314517827.jpeg" />
   <img *ngIf="activeImage === 1" src="https://edis-group.com/wp-content/uploads/2015/06/Man-Window-Desk-e1435309921682.jpeg" />
   <img *ngIf="activeImage === 2" src="https://edis-group.com/wp-content/uploads/2015/06/Asian-Woman-Sitting-e1435315158615.jpeg" />

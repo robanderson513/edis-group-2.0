@@ -22,9 +22,5 @@ export class HomeComponent implements OnInit {
   private changeDisplay(): void {
     this.activeImage = this.activeImage === 0 ? 1 : this.activeImage === 1 ? 2 : 0;
     this.changeDetectorRef.detectChanges();
-
-    //   ('straight-shooting. recruiting.');
-    // ('personal. recruiting.');
-    // ('focused. recruiting.');
   }
 }
