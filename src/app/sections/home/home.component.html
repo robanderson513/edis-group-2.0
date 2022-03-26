@@ -1,0 +1,20 @@
+<div class="home-container">
+  <div class="overlay"></div>
+  <div class="title-container">
+    <h1 *ngIf="activeImage === 0" [@slideAnimation]>straight-shooting.</h1>
+    <h1 *ngIf="activeImage === 1" [@slideAnimation]>personal.</h1>
+    <h1 *ngIf="activeImage === 2" [@slideAnimation]>focused.</h1>
+    <h1>recruiting.</h1>
+    <div class="slogan-container">
+      <p>simply great recruiting.</p>
+      <p>period.</p>
+    </div>
+    <div class="button-container">
+      <button mat-flat-button>FIND CAREER</button>
+      <button mat-flat-button>FIND TALENT</button>
+    </div>
+  </div>
+  <img *ngIf="activeImage === 0" src="assets/man-with-ipad.jpeg" />
+  <img *ngIf="activeImage === 1" src="assets/office-man.jpeg" />
+  <img *ngIf="activeImage === 2" src="assets/woman-staring.jpeg" />
+</div>

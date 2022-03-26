@@ -1,4 +1,4 @@
-@import "~@angular/material/theming";
+@import '~@angular/material/theming';
 @include mat-core();
 
 $edis-primary-palette: (
@@ -22,21 +22,21 @@ $edis-primary-palette: (
     600: white,
     700: white,
     800: white,
-    900: white,
-  ),
+    900: white
+  )
 );
 
 $edis-secondary-palette: (
-  50: #fdf2e1,
-  100: #f9deb3,
-  200: #f6c982,
-  300: #f2b452,
-  400: #f0a430,
-  500: #ee9518,
-  600: #ea8a15,
-  700: #dd6c0f,
-  800: #dd6c0f,
-  900: #d3540d,
+  50: #ffffff,
+  100: #fafafa,
+  200: #f5f5f5,
+  300: #f0f0f0,
+  400: #dedede,
+  500: #c2c2c2,
+  600: #979797,
+  700: #818181,
+  800: #606060,
+  900: #3c3c3c,
   contrast: (
     50: $black-87-opacity,
     100: $black-87-opacity,
@@ -47,20 +47,20 @@ $edis-secondary-palette: (
     600: white,
     700: white,
     800: white,
-    900: white,
-  ),
+    900: white
+  )
 );
 
 $edis-group-primary: mat-palette($edis-primary-palette, 900);
-$edis-group-accent: mat-palette($edis-secondary-palette);
+$edis-group-accent: mat-palette($edis-secondary-palette, 50);
 $edis-group-warn: mat-palette($mat-red);
 $edis-group-theme: mat-light-theme(
   (
     color: (
       primary: $edis-group-primary,
       accent: $edis-group-accent,
-      warn: $edis-group-warn,
-    ),
+      warn: $edis-group-warn
+    )
   )
 );
 
