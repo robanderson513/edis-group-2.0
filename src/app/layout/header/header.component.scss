@@ -12,6 +12,7 @@ mat-toolbar {
     a {
       background: none;
       transition: all 0.25s ease;
+      text-transform: uppercase;
     }
 
     a::after {
@@ -41,5 +42,9 @@ mat-toolbar {
   .button-container {
     display: flex;
     gap: 0.5rem;
+
+    a:visited {
+      color: inherit;
+    }
   }
 }
