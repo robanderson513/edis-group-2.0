@@ -1,1 +1,21 @@
-<p>header works!</p>
+<mat-toolbar>
+  <img
+    class="header-logo"
+    src="https://edis-group.com/wp-content/uploads/2015/06/EDIS-LOGO-300-Grey-Red.png"
+  />
+  <mat-nav-list [disableRipple]="true">
+    <a mat-list-item href="#what">what </a>
+    <a mat-list-item href="#why"> why </a>
+    <a mat-list-item href="#who"> who</a>
+    <a mat-list-item href="#where"> where </a>
+    <a mat-list-item href="#find"> find career/talent</a>
+  </mat-nav-list>
+  <div class="button-container">
+    <button mat-icon-button color="primary">
+      <i class="fa-brands fa-facebook fa-2xl"></i>
+    </button>
+    <button mat-icon-button color="primary">
+      <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+    </button>
+  </div>
+</mat-toolbar>
