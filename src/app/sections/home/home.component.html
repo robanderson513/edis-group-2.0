@@ -1,9 +1,5 @@
-<img
-  src="https://edis-group.com/wp-content/uploads/2015/06/Black-Man-Sitting-ipad-e1435314517827.jpeg"
-/>
-<img
-  src="https://edis-group.com/wp-content/uploads/2015/06/Man-Window-Desk-e1435309921682.jpeg"
-/>
-<img
-  src="https://edis-group.com/wp-content/uploads/2015/06/Asian-Woman-Sitting-e1435315158615.jpeg"
-/>
+<div class="home-container">
+  <img *ngIf="activeImage === 0" src="https://edis-group.com/wp-content/uploads/2015/06/Black-Man-Sitting-ipad-e1435314517827.jpeg" />
+  <img *ngIf="activeImage === 1" src="https://edis-group.com/wp-content/uploads/2015/06/Man-Window-Desk-e1435309921682.jpeg" />
+  <img *ngIf="activeImage === 2" src="https://edis-group.com/wp-content/uploads/2015/06/Asian-Woman-Sitting-e1435315158615.jpeg" />
+</div>
