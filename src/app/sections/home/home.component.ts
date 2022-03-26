@@ -1,3 +1,4 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { interval } from 'rxjs';
 import { tap } from 'rxjs/operators';
@@ -6,6 +7,11 @@ import { tap } from 'rxjs/operators';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('slideAnimation', [
+      transition(':enter', [style({ transform: 'translateY(100%)', opacity: 0 }), animate('500ms', style({ transform: 'translateY(0)', opacity: 1 }))])
+    ])
+  ],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HomeComponent implements OnInit {

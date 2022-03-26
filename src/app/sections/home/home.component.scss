@@ -5,7 +5,6 @@
   .overlay {
     z-index: 5;
     position: absolute;
-    top: 64px;
     width: 100%;
     height: 100%;
     background-color: rgba(170, 30, 51, 0.95);
@@ -19,17 +18,20 @@
   .title-container {
     z-index: 10;
     position: absolute;
-    top: 40%;
-    left: 40%;
+    top: 35%;
+    left: 35%;
+    width: 40vw;
     text-transform: uppercase;
 
     h1 {
+      text-align: center;
       margin-top: 0;
       margin-bottom: 0.5rem;
     }
 
     .slogan-container {
       display: flex;
+      justify-content: center;
       gap: 0.5rem;
       h4:nth-child(2) {
         color: #000000;
@@ -38,9 +40,12 @@
 
     .button-container {
       display: flex;
+      justify-content: center;
       gap: 2rem;
-      span.mat-button-wrapper {
-        text-transform: uppercase;
+
+      button {
+        width: 198px;
+        height: 54px;
       }
     }
   }
@@ -51,6 +56,6 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.1);
+    transform: scale(1.3);
   }
 }
