@@ -21,9 +21,12 @@
   margin-bottom: 0.5rem;
 }
 
+.who-container .profile-container span {
+  text-transform: uppercase;
+}
+
 .who-container .name {
   font-weight: bold;
-  text-transform: uppercase;
 }
 
 .who-container .profile-icons {
