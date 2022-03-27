@@ -1,0 +1,31 @@
+.what-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.what-container svg {
+  color: #aa1e33;
+}
+
+.what-container .icon-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.what-container .position-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 144px;
+}
+
+.what-container h1,
+.what-container h5,
+.what-container p {
+  color: #424244;
+}
+
+.what-container h1,
+.what-container h5 {
+  text-transform: uppercase;
+}
