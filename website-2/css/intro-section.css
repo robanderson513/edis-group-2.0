@@ -11,7 +11,7 @@
   height: 100%;
 }
 
-.title-container {
+.intro-container .title-container {
   z-index: 10;
   position: absolute;
   top: 35vh;
@@ -20,7 +20,7 @@
   text-transform: uppercase;
 }
 
-.title-container h1 {
+.intro-container .title-container h1 {
   position: relative;
   text-align: center;
   margin-top: 0;
@@ -37,7 +37,7 @@
   display: none;
 }
 
-.overlay {
+.intro-container .overlay {
   z-index: 5;
   position: absolute;
   width: 100%;
@@ -45,20 +45,15 @@
   background-color: rgba(170, 30, 51, 0.95);
 }
 
-.slogan-container {
+.intro-container .slogan-container {
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   margin-bottom: 2rem;
 }
 
-.slogan-container > p {
+.intro-container .slogan-container p {
   letter-spacing: 3px;
-}
-
-.slogan-container > p:nth-child(2) {
-  color: #000000;
-  font-weight: bold;
 }
 
 .intro-container .button-container {
@@ -67,7 +62,7 @@
   gap: 2rem;
 }
 
-.intro-container .button-container > button {
+.intro-container .button-container button {
   width: 198px;
   height: 54px;
   font-size: 1rem;

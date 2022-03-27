@@ -1,7 +1,7 @@
 .what-container {
-  height: 100vh;
   overflow: hidden;
   background-color: #fafafa;
+  padding: 64px 0;
 }
 
 .what-container svg {

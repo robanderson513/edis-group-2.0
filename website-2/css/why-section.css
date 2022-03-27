@@ -1,0 +1,36 @@
+.why-container {
+  display: flex;
+  height: 80vh;
+  background-color: #aa1e33;
+  overflow: hidden;
+}
+
+.why-container .image-container {
+  flex: 1;
+  background-image: url('https://edis-group.com/wp-content/uploads/2015/06/EDIS-Notepad-Mockup.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.why-container .why-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 0 64px;
+}
+
+.why-container h1,
+.why-container h3 {
+  text-transform: uppercase;
+}
+
+.why-container .why-text {
+  text-align: center;
+}
+
+.why-container h3 {
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
