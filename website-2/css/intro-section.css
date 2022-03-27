@@ -1,13 +1,14 @@
 .intro-container {
   overflow: hidden;
-  height: 110vh;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: background-animation infinite 30s, expand-image infinite 10s linear;
 }
 
 .intro-container img {
-  display: none;
   width: 100%;
   height: 100%;
-  animation: expand-image 10s linear;
 }
 
 .title-container {
@@ -20,7 +21,6 @@
 }
 
 .title-container h1 {
-  display: none;
   position: relative;
   text-align: center;
   margin-top: 0;
@@ -30,7 +30,18 @@
 
 #header-1,
 #image-1 {
-  display: block;
+  animation: show-title infinite inherit 30s;
+}
+
+#header-2,
+#image-2 {
+  display: none;
+  animation: show-title, infinite inherit 30s 10s;
+}
+#header-3,
+#image-3 {
+  display: none;
+  animation: show-title, infinite inherit 30s 20s;
 }
 
 .overlay {
@@ -72,12 +83,38 @@
   background: #f0f0f0;
 }
 
+@keyframes background-animation {
+  0%,
+  33% {
+    background-image: url('../assets/man-with-ipad.jpeg');
+  }
+  34%,
+  66% {
+    background-image: url('../assets/office-man.jpeg');
+  }
+  67%,
+  100% {
+    background-image: url('../assets/woman-staring.jpeg');
+  }
+}
+
 @keyframes expand-image {
   from {
-    transform: scale(1);
+    background-size: 120%;
   }
   to {
-    transform: scale(1.3);
+    background-size: 140%;
+  }
+}
+
+@keyframes show-title {
+  0%,
+  33% {
+    display: block;
+  }
+  34%,
+  100% {
+    display: none;
   }
 }
 

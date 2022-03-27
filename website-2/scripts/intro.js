@@ -1,17 +1,4 @@
-let imageNumber = 1;
 let isSticky = false;
-
-window.setInterval(() => changeImages(), 10000);
-
-function changeImages() {
-  let image = document.getElementById(`image-${imageNumber}`);
-  let header = document.getElementById(`header-${imageNumber}`);
-  image.style.display = header.style.display = 'none';
-  imageNumber = imageNumber === 1 ? 2 : imageNumber === 2 ? 3 : 1;
-  image = document.getElementById(`image-${imageNumber}`);
-  header = document.getElementById(`header-${imageNumber}`);
-  image.style.display = header.style.display = 'block';
-}
 
 /**
  * Checks for scroll and makes header sticky and updates appearance if user scrolls further
@@ -26,3 +13,11 @@ document.addEventListener('scroll', () => {
     document.getElementById('header').classList.remove('sticky-header');
   }
 });
+
+/**
+ * Scrolls back to the top on user click
+ */
+function scrollToTop() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
