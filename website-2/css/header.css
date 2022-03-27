@@ -10,11 +10,15 @@
 
 .header-logo {
   margin-left: 1rem;
-  width: 102px;
+}
+
+.header #light-logo {
+  width: 160px;
 }
 
 .header #dark-logo {
   display: none;
+  width: 102px;
 }
 
 nav ul {
