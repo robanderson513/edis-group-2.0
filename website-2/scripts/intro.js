@@ -4,13 +4,11 @@ let isSticky = false;
 window.setInterval(() => changeImages(), 10000);
 
 function changeImages() {
-  let image = document.getElementById(`image-${imageNumber}`);
   let header = document.getElementById(`header-${imageNumber}`);
-  image.style.display = header.style.display = 'none';
+  header.style.display = 'none';
   imageNumber = imageNumber === 1 ? 2 : imageNumber === 2 ? 3 : 1;
-  image = document.getElementById(`image-${imageNumber}`);
   header = document.getElementById(`header-${imageNumber}`);
-  image.style.display = header.style.display = 'block';
+  header.style.display = 'block';
 }
 
 /**
