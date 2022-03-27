@@ -30,14 +30,18 @@
 
 #header-1,
 #image-1 {
-  display: block;
+  animation: show-title infinite inherit 30s;
 }
 
 #header-2,
+#image-2 {
+  display: none;
+  animation: show-title, infinite inherit 30s 10s;
+}
 #header-3,
-#image-2,
 #image-3 {
   display: none;
+  animation: show-title, infinite inherit 30s 20s;
 }
 
 .overlay {
@@ -100,6 +104,17 @@
   }
   to {
     background-size: 140%;
+  }
+}
+
+@keyframes show-title {
+  0%,
+  33% {
+    display: block;
+  }
+  34%,
+  100% {
+    display: none;
   }
 }
 
