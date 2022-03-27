@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #aa1e33;
+  padding: 2rem 0;
 }
 
 .who-container p {
