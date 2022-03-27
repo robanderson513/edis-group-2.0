@@ -31,25 +31,12 @@
 }
 
 .what-container h1,
-.what-container h5,
+.what-container h4,
 .what-container p {
   color: #424244;
 }
 
-.what-container h1,
-.what-container h4,
-.what-container h5 {
-  text-transform: uppercase;
-}
-
-.what-container h1,
-.what-container h4,
-.what-container h5,
-.what-container p {
-  text-align: center;
-}
-
-.what-container h4 {
+.what-container h3 {
   color: #aa1e33;
   letter-spacing: 2px;
 }

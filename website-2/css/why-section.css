@@ -21,15 +21,6 @@
   margin: 0 64px;
 }
 
-.why-container h1,
-.why-container h3 {
-  text-transform: uppercase;
-}
-
-.why-container .why-text {
-  text-align: center;
-}
-
 .why-container h3 {
   letter-spacing: 1px;
   margin-bottom: 0;
