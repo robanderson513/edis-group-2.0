@@ -33,3 +33,9 @@ nav ul li {
   letter-spacing: 1px;
   color: #000000;
 }
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}

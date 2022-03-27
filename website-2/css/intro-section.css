@@ -1,11 +1,12 @@
 .intro-container {
   overflow: hidden;
-  height: 1000px;
+  height: 100vh;
   padding-top: 64px;
 }
 
 .intro-container img {
   width: 100%;
+  height: 100%;
   animation: expand-image 10s linear;
 }
 
@@ -59,8 +60,10 @@
 .intro-container .button-container > button {
   width: 198px;
   height: 54px;
-  border: none;
-  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: #f0f0f0;
 }
 
 @keyframes expand-image {
