@@ -1,18 +1,20 @@
 .header {
   z-index: 50;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
-  position: fixed;
   width: 100%;
-  padding: 0 1rem;
+  transition: all 0.25s;
 }
 
 .header-logo {
   margin-left: 1rem;
   width: 102px;
+}
+
+.header #dark-logo {
+  display: none;
 }
 
 nav ul {
@@ -24,8 +26,6 @@ nav ul {
 }
 
 nav ul li a {
-  color: #000000;
-  height: 48px;
   position: relative;
   text-decoration: none;
   background: none;
@@ -40,11 +40,9 @@ nav ul li a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #aa1e33;
+  background-color: #ffffff;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-}
-nav ul li a::after {
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
@@ -53,10 +51,6 @@ nav ul li a::after {
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   transform: scale(1);
-}
-
-a:visited {
-  color: inherit;
 }
 
 .header .button-container {
@@ -74,9 +68,41 @@ a:visited {
 }
 
 .header .button-container button:active {
-  background-color: #e6b3ba;
+  background-color: #dedede;
 }
 
 .header .button-container button svg {
+  color: #ffffff;
+}
+
+/** Sticky header transition effects on scroll */
+
+.sticky-header {
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+  position: fixed;
+}
+
+.sticky-header #dark-logo {
+  display: block;
+}
+
+.sticky-header #light-logo {
+  display: none;
+}
+
+.sticky-header nav ul li {
+  color: #000000;
+}
+
+.sticky-header nav ul li a::after {
+  background-color: #aa1e33;
+}
+
+.sticky-header .button-container button svg {
   color: #aa1e33;
+}
+
+.sticky-header .button-container button:active {
+  background-color: #e6b3ba;
 }
