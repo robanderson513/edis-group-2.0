@@ -2,6 +2,7 @@
   height: 100vh;
   overflow: hidden;
   background-color: #fafafa;
+  padding-top: 64px;
 }
 
 .what-container svg {
