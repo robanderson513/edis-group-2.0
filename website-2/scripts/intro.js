@@ -1,4 +1,15 @@
 let isSticky = false;
+let headerNumber = 1;
+
+window.setInterval(() => changeImages(), 10000);
+
+function changeImages() {
+  let header = document.getElementById(`header-${headerNumber}`);
+  header.style.display = 'none';
+  headerNumber = headerNumber === 1 ? 2 : headerNumber === 2 ? 3 : 1;
+  header = document.getElementById(`header-${headerNumber}`);
+  header.style.display = 'block';
+}
 
 /**
  * Checks for scroll and makes header sticky and updates appearance if user scrolls further
