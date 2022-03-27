@@ -12,6 +12,10 @@
   width: 102px;
 }
 
+.header #dark-logo {
+  display: none;
+}
+
 nav ul {
   display: flex;
   gap: 1.5rem;
@@ -38,9 +42,6 @@ nav ul li a::after {
   background-color: #ffffff;
   opacity: 0;
   transition: opacity 300ms, transform 300ms;
-}
-
-nav ul li a::after {
   opacity: 1;
   transform: scale(0);
   transform-origin: center;
@@ -49,10 +50,6 @@ nav ul li a::after {
 nav ul li a:hover::after,
 nav ul li a:focus::after {
   transform: scale(1);
-}
-
-a:visited {
-  color: inherit;
 }
 
 .header .button-container {
@@ -77,10 +74,21 @@ a:visited {
   color: #ffffff;
 }
 
+/** Sticky header transition effects on scroll */
+
 .sticky-header {
   background-color: #ffffff;
   box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
   position: fixed;
+  transition: all 0.5s;
+}
+
+.sticky-header #dark-logo {
+  display: block;
+}
+
+.sticky-header #light-logo {
+  display: none;
 }
 
 .sticky-header nav ul li {
