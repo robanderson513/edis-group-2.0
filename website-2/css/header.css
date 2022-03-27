@@ -1,0 +1,82 @@
+.header {
+  z-index: 50;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+  position: fixed;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.header-logo {
+  margin-left: 1rem;
+  width: 102px;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #000000;
+  height: 48px;
+  position: relative;
+  text-decoration: none;
+  background: none;
+  transition: all 0.25s ease;
+  text-transform: uppercase;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #aa1e33;
+  opacity: 0;
+  transition: opacity 300ms, transform 300ms;
+}
+nav ul li a::after {
+  opacity: 1;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+nav ul li a:hover::after,
+nav ul li a:focus::after {
+  transform: scale(1);
+}
+
+a:visited {
+  color: inherit;
+}
+
+.header .button-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+.header .button-container button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+}
+
+.header .button-container button:active {
+  background-color: #e6b3ba;
+}
+
+.header .button-container button svg {
+  color: #aa1e33;
+}
